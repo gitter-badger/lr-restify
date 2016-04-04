@@ -1,0 +1,15 @@
+{
+  "name": "lr-restify",
+  "author": "Late registration",
+  "description": "Late registration container for serving the restful endpoints.",
+  "contributors": [
+    "Boris",
+    "Rodislave",
+    "Andrei"
+  ],
+  "version": "0.0.1",
+  "license": "MIT",
+  "dependencies": {
+    "restify": "^4.0.4"
+  }
+}
