@@ -1,0 +1,14 @@
+docker build -t lr-restify .
+
+docker run -p 80:8080 -v /home/late/lr-restify:/usr/src/app/ -d lr-restify
+#--> b3e175ce47b02b2aa420e0e4c07c5b54b874656b58983846e8ee5c81ef17a015
+
+docker ps
+#--> 4fd28a712395
+
+# attach to a running image by container id
+docker exec -i -t 4fd28a712395 bash
+
+# kill by id returned after run
+docker kill b3e175ce47b02b2aa420e0e4c07c5b54b874656b58983846e8ee5c81ef17a015
+
