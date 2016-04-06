@@ -1,14 +1,22 @@
 var restify = require('restify');
+var sampleModel = require('./SampleModel');
 
 function respond(req, res, next) {
-    res.send('get a fucking small drink ' + req.params.name);
+
+    sampleModel.findAll().toArray(function(err, result) {
+        console.log(err, result);
+    })
+
+    
+    res.header('content-type', 'application/json');
+    res.send('hi');
     next();
 }
 
 var server = restify.createServer();
 
-server.get('/hello/:name', respond);
-server.head('/hello/:name', respond);
+server.get('/hello', respond);
+
 
 server.listen(8080, function() {
     console.log('%s listening at %s', server.name, server.url);

@@ -10,7 +10,8 @@
   "version": "0.0.1",
   "license": "MIT",
   "dependencies": {
-    "documentdb-q-promises": "^1.6.0",
+    "documentdb": "~1.6.0",
+    "log": "^1.4.0",
     "restify": "^4.0.4"
   }
 }
