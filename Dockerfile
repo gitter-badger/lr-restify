@@ -1,12 +1,12 @@
 FROM node:latest
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir -p /app
+WORKDIR /app/src
 
-COPY package.json /usr/src/app/
-COPY ./src /usr/src/app
+COPY package.json /app/
 
 RUN npm install
+
 
 EXPOSE 8080
 
