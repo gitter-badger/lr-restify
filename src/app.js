@@ -1,7 +1,7 @@
 var restify = require('restify');
 
 function respond(req, res, next) {
-    res.send('get a     drink ' + req.params.name);
+    res.send('get a fucking drink ' + req.params.name);
     next();
 }
 
