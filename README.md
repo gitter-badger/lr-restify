@@ -1,4 +1,9 @@
-# Late registration - restify container
+# Late registration - working title
+
+
+[![Build Status](https://travis-ci.org/LateRegistration/lr-restify.svg?branch=master)](https://travis-ci.org/LateRegistration/lr-restify)
+[![Coverage Status](https://coveralls.io/repos/github/LateRegistration/lr-restify/badge.svg?branch=master)](https://coveralls.io/github/LateRegistration/lr-restify?branch=master)
+
 
 ##Install
 Go to the directory that has your Dockerfile and run the following command to build the Docker image. The -t flag lets you tag your image so it's easier to find later using the docker images command:
