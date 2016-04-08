@@ -1,5 +1,7 @@
 # Late registration - working title
 
+[![Join the chat at https://gitter.im/LateRegistration/lr-restify](https://badges.gitter.im/LateRegistration/lr-restify.svg)](https://gitter.im/LateRegistration/lr-restify?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 [![Build Status](https://travis-ci.org/LateRegistration/lr-restify.svg?branch=master)](https://travis-ci.org/LateRegistration/lr-restify)
 [![Coverage Status](https://coveralls.io/repos/github/LateRegistration/lr-restify/badge.svg?branch=master)](https://coveralls.io/github/LateRegistration/lr-restify?branch=master)
