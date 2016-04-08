@@ -1,16 +1,13 @@
 var Config = require('./config.js');
-var DocumentClient = require('documentdb').DocumentClient;
+var Mongoose = require('mongoose');
 
-var DocumentDbConnection = (function (Config, DocumentClient) {
+var DbConnection = (function (Config, Mongoose) {
 
     var instance = null;
 
     function getInstance() {
         if (!instance) {
-            instance = new DocumentClient(
-                Config.documentdb.hostEndpoint,
-                {masterKey: Config.documentdb.masterKey}
-            );
+            instance = Mongoose.connect(Config.mongodb.host)
         }
         return instance;
     }
@@ -19,6 +16,6 @@ var DocumentDbConnection = (function (Config, DocumentClient) {
         getInstance: getInstance
     };
 
-})(Config, DocumentClient);
+})(Config, Mongoose);
 
-module.exports = DocumentDbConnection;
+module.exports = DbConnection;
