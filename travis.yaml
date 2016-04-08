@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "node"
+  - "iojs"
+before_script:
+  - npm install --dev
+script: npm test
+after_script: cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
+notifications:
+  slack: lateregistration:kmKxq8Qj59W29CgUXaNsIEAM

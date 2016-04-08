@@ -1,4 +1,4 @@
-var Config = require('./Config.js');
+var Config = require('./config.js');
 var DocumentClient = require('documentdb').DocumentClient;
 
 var DocumentDbConnection = (function (Config, DocumentClient) {

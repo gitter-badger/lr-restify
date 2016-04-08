@@ -1,5 +1,5 @@
 var restify = require('restify');
-var sampleModel = require('./SampleModel');
+var sampleModel = require('./model/sample');
 
 function respond(req, res, next) {
 

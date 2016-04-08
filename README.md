@@ -11,5 +11,5 @@ $ docker build -t lr-restify .
 Running your image with -d runs the container in detached mode, leaving the container running in the background. The -p flag redirects a public port to a private port inside the container. Run the image you previously built:
 
 ```
-$ docker run -v $(pwd)/src/:/usr/src/app/src/ -p 49160:8080 -d lr-restify
+$ docker run --name webserver --link lr-mongodb:mongo -v $(pwd)/src/:/usr/src/app/src/ -p 49160:8080 -d lr-restify
 ```

@@ -1,4 +1,4 @@
-var DocumentDbConnection = require('./lib/DocumentDbConnection');
+var DocumentDbConnection = require('./../lib/db-connection');
 
 var SampleModel = (function(client) {
 
