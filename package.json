@@ -10,6 +10,19 @@
   "version": "0.0.1",
   "license": "MIT",
   "dependencies": {
+    "log": "^1.4.0",
+    "mongoose": "^4.4.11",
     "restify": "^4.0.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5",
+    "mongoose-mock": "^0.4.0",
+    "proxyquire": "^1.7.4"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/istanbul test ./node_modules/.bin/_mocha -- -R spec --recursive"
   }
 }
